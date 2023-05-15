@@ -18,4 +18,20 @@ public class FunRestController {
     public String sayHello() {
         return helloMessage;
     }
+
+    /**
+     * Endpoint to test project auto-reload (spring-boot-devtools).
+     */
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+        return "Perform a workout!";
+    }
+
+    /**
+     * Another endpoint to test project auto-reload (spring-boot-devtools).
+     */
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Today is your lucky day!";
+    }
 }
