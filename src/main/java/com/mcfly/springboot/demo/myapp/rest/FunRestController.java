@@ -10,6 +10,12 @@ public class FunRestController {
     @Value("${hello.message}")
     private String helloMessage;
 
+    @Value("${coach.name}")
+    private String coachName;
+
+    @Value("${team.name}")
+    private String teamName;
+
 
     /**
      * Exposes the "/" endpoint that returns "Hello world!".
@@ -33,5 +39,10 @@ public class FunRestController {
     @GetMapping("/fortune")
     public String getDailyFortune() {
         return "Today is your lucky day!";
+    }
+
+    @GetMapping("/teaminfo")
+    public String teamInfo() {
+        return "Coach: " + coachName + ", team name: " + teamName;
     }
 }
