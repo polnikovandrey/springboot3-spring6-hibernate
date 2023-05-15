@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DemoController {
+public class DemoConstructorInjectionController {
 
     private final Coach coach;
 
     @Autowired
-    public DemoController(Coach coach) {
+    public DemoConstructorInjectionController(Coach coach) {
         this.coach = coach;
     }
 
