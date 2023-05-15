@@ -27,13 +27,13 @@ public class TrackCoach implements Coach {
     }
 
     @PostConstruct
-    public void postConstruct() {
+    public void postConstruct() {       // TODO !!!
         this.workoutMessage = "Run a hard 5k";
     }
 
     /* Prototype beans are not being destroyed by Spring, user is responsible for cleaning. */
     @PreDestroy
-    public void preDestroy() {
+    public void preDestroy() {      // TODO !!!
         this.workoutMessage = "Empty workout message";
     }
 }
