@@ -31,6 +31,7 @@ public class TrackCoach implements Coach {
         this.workoutMessage = "Run a hard 5k";
     }
 
+    /* Prototype beans are not being destroyed by Spring, user is responsible for cleaning. */
     @PreDestroy
     public void preDestroy() {
         this.workoutMessage = "Empty workout message";
