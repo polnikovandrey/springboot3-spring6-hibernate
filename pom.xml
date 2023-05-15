@@ -22,10 +22,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--Spring Security -->
+		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		-->
 
 		<!-- Auto-reload project on code changes. -->
 		<dependency>
@@ -33,7 +36,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
-		<!-- Spring application health check and metrics:
+		<!-- Spring Boot Actuator (application health check and metrics):
 		 * /actuator/health (exposed by default with basic on/off json output, but could be customized)
 		 * /actuator/info (management.endpoints.web.exposure.include=health,info entry in application.properties is needed,
 		  	generally supported with management.info.env.enabled=true and a number of info.app.*=... entries)
@@ -42,10 +45,12 @@
 		 * /actuator/threaddump
 		 * /actuator/mappings
 		 * ... -->
+		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
