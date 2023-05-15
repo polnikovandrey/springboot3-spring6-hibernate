@@ -1,7 +1,11 @@
 package com.mcfly.common;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /*
@@ -12,10 +16,23 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 @Lazy
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class TrackCoach implements Coach {
+
+    private String workoutMessage;
 
     @Override
     public String getWorkout() {
-        return "Run a hard 5k";
+        return workoutMessage;
+    }
+
+    @PostConstruct
+    public void postConstruct() {
+        this.workoutMessage = "Run a hard 5k";
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        this.workoutMessage = "Empty workout message";
     }
 }
