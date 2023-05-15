@@ -1,4 +1,4 @@
-package com.mcfly.springboot.demo.myapp.rest;
+package com.mcfly._01_springboot.demo.rest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +28,7 @@ public class FunRestController {
     /**
      * Endpoint to test project auto-reload (spring-boot-devtools).
      */
-    @GetMapping("/workout")
+    @GetMapping("/demo_workout")
     public String getDailyWorkout() {
         return "Perform a workout!";
     }

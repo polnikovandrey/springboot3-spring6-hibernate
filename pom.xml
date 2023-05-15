@@ -30,7 +30,12 @@
 		</dependency>
 		-->
 
-		<!-- Auto-reload project on code changes. -->
+		<!--
+		 Auto-reload project on code changes.
+		 Intellij Idea properties should be tuned in order to make auto-reload functional:
+		  * Build, Execution, Deployment -> Compiler -> Build project automatically
+		  * Advanced Setting -> Allow auto-make to start...
+		  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

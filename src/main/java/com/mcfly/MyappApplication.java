@@ -1,4 +1,4 @@
-package com.mcfly.springboot.demo.myapp;
+package com.mcfly;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
