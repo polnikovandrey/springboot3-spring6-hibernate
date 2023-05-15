@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Primary
-@Lazy
+@Lazy   /* Prototype scope implies laziness, there is no need of @Lazy annotation. */
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class TrackCoach implements Coach {
 
