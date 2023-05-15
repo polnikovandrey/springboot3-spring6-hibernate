@@ -1,4 +1,4 @@
-package com.mcfly._02_springcore.demo;
+package com.mcfly.common;
 
 public interface Coach {
 

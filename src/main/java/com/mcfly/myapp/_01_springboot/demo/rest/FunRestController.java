@@ -1,4 +1,4 @@
-package com.mcfly._01_springboot.demo.rest;
+package com.mcfly.myapp._01_springboot.demo.rest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
